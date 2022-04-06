@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//variables
+$primary-color: #13a0ab;
+$secondary-color: white;
+$terciary-color: #7a7a7a;
+$shadow: #00000038;
+
+$full-percentage: 100%;
+
+@mixin flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  @include flex-center;
+  background-color: $primary-color;
+  height: 100vh;
+}
+
+.wrapper {
+  @include flex-center;
+  background-color: $secondary-color;
+  width: 50vw;
+  max-width: 800px;
+  height: 50vh;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 3px 3px $shadow;
+
+  &__btn {
+    width: $full-percentage;
+    background-color: $terciary-color;
+    color: $secondary-color;
+    height: 10%;
+    justify-self: flex-end;
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 1.5em;
+  }
+}
+
+.texts {
+  @include flex-center;
+  margin: 30px;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  .labels {
+    margin: 30px;
+    width: $full-percentage;
+    margin-left: 70px;
+
+    &__container {
+      margin-bottom: 10px;
+    }
+
+    &__answers {
+      margin-right: 5px;
+    }
+  }
+
+  // JS class
+  .quiz {
+    @include flex-center;
+    margin: 30px;
+    height: 100%;
+  }
+}

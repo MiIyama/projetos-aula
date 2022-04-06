@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper" id="wrapper">
+      <div class="texts">
+        <h2 id="title" class="texts__title"></h2>
+        <p id="question" class="texts__question"></p>
+      </div>
+      <div class="labels">
+        <div class="labels__container">
+          <input type="radio" name="answers" id="a" class="labels__answers" />
+          <label for="a" id="questionA" class="labels__question"></label>
+        </div>
+        <div class="labels__container">
+          <input type="radio" name="answers" id="b" class="labels__answers" />
+          <label for="b" id="questionB" class="labels__question"></label>
+        </div>
+        <div class="labels__container">
+          <input type="radio" name="answers" id="c" class="labels__answers" />
+          <label for="c" id="questionC" class="labels__question"></label>
+        </div>
+        <div class="labels__container">
+          <input type="radio" name="answers" id="d" class="labels__answers" />
+          <label for="d" id="questionD" class="labels__question"></label>
+        </div>
+      </div>
+      <button id="btn" class="wrapper__btn">Enviar</button>
+    </div>
+  </body>
+</html>
