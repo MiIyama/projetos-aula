@@ -5,7 +5,7 @@ const SEARCHAPI =
   "https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query=";
 
 const form = document.querySelector("#form");
-const input = document.querySelector("#input");
+const input = document.querySelector("#search");
 const main = document.querySelector("#main");
 
 getMovies(APIURL);
@@ -52,3 +52,13 @@ function getClassByRate(vote_average) {
     return "red";
   }
 }
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  console.log(input.value);
+  const searchTerm = input.value;
+  if (searchTerm) {
+    getMovies(SEARCHAPI + searchTerm);
+    input.value = "";
+  }
+});
