@@ -87,3 +87,16 @@ button.addEventListener("click", () => {
     }
   }
 });
+
+let user = {
+  nome: "ana",
+  idade: 18,
+
+
+};
+user.nome;
+class User{
+  constructor(nome,idade){
+    this.nome = nome,
+  }
+}
