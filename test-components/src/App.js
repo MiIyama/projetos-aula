@@ -1,10 +1,11 @@
-import { MainUseState } from "./components/Test";
+import { TodoList } from "./components/TodoList";
 
 function App() {
   return (
-    <div className="App">
-      <MainUseState />
-    </div>
+    <section>
+      <h1>Todo-list</h1>
+      <TodoList />
+    </section>
   );
 }
 
